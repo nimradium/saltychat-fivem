@@ -211,7 +211,7 @@ namespace SaltyServer
 
             lock (this._voiceClients)
             {
-                voiceClient = new VoiceClient(player, this.GetTeamSpeakName(), SharedData.VoiceRanges[1], true);
+                voiceClient = new VoiceClient(player, "ZockerStube -   [" + player.Handle + "]", SharedData.VoiceRanges[1], true);
 
                 if (this._voiceClients.ContainsKey(player))
                     this._voiceClients[player] = voiceClient;
